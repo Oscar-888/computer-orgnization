@@ -1,0 +1,17 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/SINGLE_CYCLE_1_SIMULATION.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/EXT.v,1714293192,verilog,,D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/NPC.v,D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/ctrl_encode_def.v,EXT,,,,,,,,
+D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/NPC.v,1714286522,verilog,,D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/PC.v,D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/ctrl_encode_def.v,NPC,,,,,,,,
+D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/PC.v,1625015737,verilog,,D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/RF.v,,PC,,,,,,,,
+D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/RF.v,1711441724,verilog,,D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/SCPU.v,,RF,,,,,,,,
+D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/SCPU.v,1711433750,verilog,,D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/alu.v,D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/ctrl_encode_def.v,SCPU,,,,,,,,
+D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/alu.v,1621755150,verilog,,D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/ctrl.v,D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/ctrl_encode_def.v,alu,,,,,,,,
+D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/ctrl.v,1711443113,verilog,,D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/dm.v,,ctrl,,,,,,,,
+D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/ctrl_encode_def.v,1621678578,verilog,,,,,,,,,,,,
+D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/dm.v,1711443762,verilog,,D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/im.v,D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/ctrl_encode_def.v,dm,,,,,,,,
+D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/im.v,1650968517,verilog,,D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/sccomp.v,,im,,,,,,,,
+D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/sccomp.v,1710932316,verilog,,D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/sccomp_tb.v,,sccomp,,,,,,,,
+D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/sccomp_tb.v,1710847408,verilog,,,,sccomp_tb,,,,,,,,

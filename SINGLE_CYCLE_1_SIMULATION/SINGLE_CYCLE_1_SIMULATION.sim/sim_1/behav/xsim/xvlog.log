@@ -1,0 +1,22 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/EXT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXT
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/NPC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/RF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RF
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/SCPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SCPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/dm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dm
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/im.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module im
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/sccomp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sccomp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivadowork/SINGLE_CYCLE_1_SIMULATION/resources/sccomp_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sccomp_tb

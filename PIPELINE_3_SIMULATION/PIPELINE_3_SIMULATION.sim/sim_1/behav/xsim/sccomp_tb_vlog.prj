@@ -1,0 +1,22 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../resources/EXT.v" \
+"../../../../resources/GRE_array.v" \
+"../../../../resources/HazardDectection.v" \
+"../../../../resources/NPC.v" \
+"../../../../resources/PC.v" \
+"../../../../resources/RF.v" \
+"../../../../resources/SCPU.v" \
+"../../../../resources/alu.v" \
+"../../../../resources/ctrl.v" \
+"../../../../resources/dm.v" \
+"../../../../resources/forward.v" \
+"../../../../resources/im.v" \
+"../../../../resources/sccomp.v" \
+"../../../../resources/sccomp_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

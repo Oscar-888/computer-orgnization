@@ -1,0 +1,683 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May  8 15:19:14 2024
+# Process ID: 7508
+# Current directory: D:/Vivadowork/PIPELINE_4_APPLICATION/PIPELINE_4_APPLICATION.runs/synth_1
+# Command line: vivado.exe -log IP2SOC_Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source IP2SOC_Top.tcl
+# Log file: D:/Vivadowork/PIPELINE_4_APPLICATION/PIPELINE_4_APPLICATION.runs/synth_1/IP2SOC_Top.vds
+# Journal file: D:/Vivadowork/PIPELINE_4_APPLICATION/PIPELINE_4_APPLICATION.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source IP2SOC_Top.tcl -notrace
+Command: synth_design -top IP2SOC_Top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16828 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 474.246 ; gain = 100.195
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'IP2SOC_Top' [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'imem' [D:/Vivadowork/PIPELINE_4_APPLICATION/PIPELINE_4_APPLICATION.runs/synth_1/.Xil/Vivado-7508-LAPTOP-ADPEJ7RL/realtime/imem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (1#1) [D:/Vivadowork/PIPELINE_4_APPLICATION/PIPELINE_4_APPLICATION.runs/synth_1/.Xil/Vivado-7508-LAPTOP-ADPEJ7RL/realtime/imem_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dmem' [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/dm.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/dm.v:32]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/dm.v:72]
+WARNING: [Synth 8-4767] Trying to implement RAM 'dmem_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "dmem_reg" dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (2#1) [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/dm.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MIO_BUS' [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/MIO_BUS.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'MIO_BUS' (3#1) [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/MIO_BUS.v:24]
+INFO: [Synth 8-6157] synthesizing module 'MULTI_CH32' [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/MULTI_CH32.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MULTI_CH32' (4#1) [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/MULTI_CH32.v:23]
+INFO: [Synth 8-6085] Hierarchical reference on 'rf' stops possible memory inference [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/RF.v:9]
+INFO: [Synth 8-6157] synthesizing module 'SCPU' [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/SCPU.v:2]
+INFO: [Synth 8-6157] synthesizing module 'PC' [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/PC.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (5#1) [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/PC.v:1]
+INFO: [Synth 8-6157] synthesizing module 'GRE_array' [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/GRE_array.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'GRE_array' (6#1) [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/GRE_array.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ctrl' [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/ctrl.v:4]
+WARNING: [Synth 8-3848] Net GPRSel in module/entity ctrl does not have driver. [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/ctrl.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ctrl' (7#1) [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/ctrl.v:4]
+WARNING: [Synth 8-350] instance 'U_ctrl' of module 'ctrl' requires 14 connections, but only 13 given [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/SCPU.v:158]
+INFO: [Synth 8-6157] synthesizing module 'EXT' [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/EXT.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'EXT' (8#1) [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/EXT.v:2]
+INFO: [Synth 8-6157] synthesizing module 'RF' [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/RF.v:2]
+WARNING: [Synth 8-5788] Register rf_reg[0] in module RF is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/RF.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'RF' (9#1) [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/RF.v:2]
+INFO: [Synth 8-6157] synthesizing module 'HazardDectectionUnit' [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/HazardDectection.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'HazardDectectionUnit' (10#1) [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/HazardDectection.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ForwardingUnit' [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/forward.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ForwardingUnit' (11#1) [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/forward.v:1]
+INFO: [Synth 8-6157] synthesizing module 'alu' [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/alu.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/alu.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (12#1) [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/alu.v:3]
+INFO: [Synth 8-6157] synthesizing module 'NPC' [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/NPC.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'NPC' (13#1) [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/NPC.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/SCPU.v:335]
+INFO: [Synth 8-6155] done synthesizing module 'SCPU' (14#1) [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/SCPU.v:2]
+INFO: [Synth 8-6157] synthesizing module 'SEG7x16' [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/SEG7x16.v:21]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/SEG7x16.v:87]
+INFO: [Synth 8-6155] done synthesizing module 'SEG7x16' (15#1) [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/SEG7x16.v:21]
+INFO: [Synth 8-6157] synthesizing module 'CLK_DIV' [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/CLK_DIV.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'CLK_DIV' (16#1) [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/CLK_DIV.v:21]
+WARNING: [Synth 8-3848] Net reg_data in module/entity IP2SOC_Top does not have driver. [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'IP2SOC_Top' (17#1) [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:3]
+WARNING: [Synth 8-3331] design ctrl has unconnected port GPRSel[1]
+WARNING: [Synth 8-3331] design ctrl has unconnected port GPRSel[0]
+WARNING: [Synth 8-3331] design ctrl has unconnected port Zero
+WARNING: [Synth 8-3331] design MULTI_CH32 has unconnected port clk
+WARNING: [Synth 8-3331] design MULTI_CH32 has unconnected port rst
+WARNING: [Synth 8-3331] design MULTI_CH32 has unconnected port EN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:39 . Memory (MB): peak = 1128.105 ; gain = 754.055
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data6[31] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data6[30] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data6[29] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data6[28] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data6[27] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data6[26] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data6[25] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data6[24] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data6[23] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data6[22] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data6[21] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data6[20] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data6[19] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data6[18] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data6[17] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data6[16] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data6[15] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data6[14] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data6[13] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data6[12] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data6[11] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data6[10] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data6[9] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data6[8] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data6[7] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data6[6] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data6[5] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data6[4] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data6[3] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data6[2] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data6[1] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data6[0] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data7[31] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data7[30] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data7[29] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data7[28] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data7[27] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data7[26] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data7[25] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data7[24] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data7[23] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data7[22] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data7[21] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data7[20] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data7[19] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data7[18] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data7[17] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data7[16] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data7[15] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data7[14] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data7[13] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data7[12] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data7[11] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data7[10] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data7[9] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data7[8] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data7[7] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data7[6] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data7[5] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data7[4] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data7[3] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data7[2] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data7[1] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:data7[0] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:reg_data[31] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:reg_data[30] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:reg_data[29] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:reg_data[28] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:reg_data[27] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:reg_data[26] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:reg_data[25] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:reg_data[24] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:reg_data[23] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:reg_data[22] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:reg_data[21] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:reg_data[20] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:reg_data[19] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:reg_data[18] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:reg_data[17] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:reg_data[16] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:reg_data[15] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:reg_data[14] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:reg_data[13] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:reg_data[12] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:reg_data[11] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:reg_data[10] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:reg_data[9] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:reg_data[8] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:reg_data[7] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:reg_data[6] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:reg_data[5] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:reg_data[4] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:reg_data[3] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:reg_data[2] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:reg_data[1] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+WARNING: [Synth 8-3295] tying undriven pin U_Multi:reg_data[0] to constant 0 [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/xgriscv_fpga_top.v:63]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:49 . Memory (MB): peak = 1128.105 ; gain = 754.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:49 . Memory (MB): peak = 1128.105 ; gain = 754.055
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Vivadowork/PIPELINE_4_APPLICATION/PIPELINE_4_APPLICATION.srcs/sources_1/ip/imem/imem/imem_in_context.xdc] for cell 'U_IM'
+Finished Parsing XDC File [d:/Vivadowork/PIPELINE_4_APPLICATION/PIPELINE_4_APPLICATION.srcs/sources_1/ip/imem/imem/imem_in_context.xdc] for cell 'U_IM'
+Parsing XDC File [D:/Vivadowork/PIPELINE_4_APPLICATION/constraints/icf-v-p.xdc]
+WARNING: [Vivado 12-507] No nets matched 'sw_i_IBUF[15]'. [D:/Vivadowork/PIPELINE_4_APPLICATION/constraints/icf-v-p.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'led_o[0]'. [D:/Vivadowork/PIPELINE_4_APPLICATION/constraints/icf-v-p.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'led_o[1]'. [D:/Vivadowork/PIPELINE_4_APPLICATION/constraints/icf-v-p.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'led_o[2]'. [D:/Vivadowork/PIPELINE_4_APPLICATION/constraints/icf-v-p.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'led_o[3]'. [D:/Vivadowork/PIPELINE_4_APPLICATION/constraints/icf-v-p.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'led_o[4]'. [D:/Vivadowork/PIPELINE_4_APPLICATION/constraints/icf-v-p.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'led_o[5]'. [D:/Vivadowork/PIPELINE_4_APPLICATION/constraints/icf-v-p.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'led_o[6]'. [D:/Vivadowork/PIPELINE_4_APPLICATION/constraints/icf-v-p.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'led_o[7]'. [D:/Vivadowork/PIPELINE_4_APPLICATION/constraints/icf-v-p.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'led_o[8]'. [D:/Vivadowork/PIPELINE_4_APPLICATION/constraints/icf-v-p.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'led_o[9]'. [D:/Vivadowork/PIPELINE_4_APPLICATION/constraints/icf-v-p.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'led_o[10]'. [D:/Vivadowork/PIPELINE_4_APPLICATION/constraints/icf-v-p.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'led_o[11]'. [D:/Vivadowork/PIPELINE_4_APPLICATION/constraints/icf-v-p.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'led_o[12]'. [D:/Vivadowork/PIPELINE_4_APPLICATION/constraints/icf-v-p.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'led_o[13]'. [D:/Vivadowork/PIPELINE_4_APPLICATION/constraints/icf-v-p.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'led_o[14]'. [D:/Vivadowork/PIPELINE_4_APPLICATION/constraints/icf-v-p.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'led_o[15]'. [D:/Vivadowork/PIPELINE_4_APPLICATION/constraints/icf-v-p.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'btn_i[0]'. [D:/Vivadowork/PIPELINE_4_APPLICATION/constraints/icf-v-p.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'btn_i[1]'. [D:/Vivadowork/PIPELINE_4_APPLICATION/constraints/icf-v-p.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'btn_i[2]'. [D:/Vivadowork/PIPELINE_4_APPLICATION/constraints/icf-v-p.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'btn_i[3]'. [D:/Vivadowork/PIPELINE_4_APPLICATION/constraints/icf-v-p.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'btn_i[4]'. [D:/Vivadowork/PIPELINE_4_APPLICATION/constraints/icf-v-p.xdc:67]
+WARNING: [Vivado 12-507] No nets matched 'U_SCPU/U_alu/rf[1][31]_i_7_1'. [D:/Vivadowork/PIPELINE_4_APPLICATION/constraints/icf-v-p.xdc:88]
+WARNING: [Vivado 12-507] No nets matched 'U_SCPU/U_DM/dmem[1][7]_i_11_n_3'. [D:/Vivadowork/PIPELINE_4_APPLICATION/constraints/icf-v-p.xdc:89]
+Finished Parsing XDC File [D:/Vivadowork/PIPELINE_4_APPLICATION/constraints/icf-v-p.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/Vivadowork/PIPELINE_4_APPLICATION/constraints/icf-v-p.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/IP2SOC_Top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Vivadowork/PIPELINE_4_APPLICATION/constraints/icf-v-p.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/IP2SOC_Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/IP2SOC_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1831.441 ; gain = 0.383
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1831.961 ; gain = 0.383
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1831.961 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 1831.961 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:01:49 . Memory (MB): peak = 1835.484 ; gain = 1461.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:01:49 . Memory (MB): peak = 1835.484 ; gain = 1461.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U_IM. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:01:49 . Memory (MB): peak = 1835.484 ; gain = 1461.434
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/alu.v:15]
+INFO: [Synth 8-5546] ROM "o_seg_r" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'dout_reg' [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/dm.v:73]
+WARNING: [Synth 8-327] inferring latch for variable 'C_reg' [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/alu.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'WD_reg' [D:/Vivadowork/PIPELINE_4_APPLICATION/resources/SCPU.v:176]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:23 ; elapsed = 00:17:51 . Memory (MB): peak = 1949.090 ; gain = 1575.039
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |muxpart__8704_dmem |           1|    196609|
+|2     |dmem__GB1          |           1|     18812|
+|3     |dmem__GB2          |           1|     18429|
+|4     |dmem__GB3          |           1|     33346|
+|5     |dmem__GB4          |           1|     33416|
+|6     |dmem__GB5          |           1|     43777|
+|7     |dmem__GB6          |           1|     44340|
+|8     |dmem__GB7          |           1|     32922|
+|9     |muxpart__8705_dmem |           1|     32760|
+|10    |muxpart__8706_dmem |           1|     32760|
+|11    |muxpart__8707_dmem |           1|     32760|
+|12    |dmem__GB11         |           1|     12551|
+|13    |IP2SOC_Top__GC0    |           1|     16034|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      5 Bit         XORs := 6     
++---Registers : 
+	              181 Bit    Registers := 4     
+	               32 Bit    Registers := 34    
+	                8 Bit    Registers := 4097  
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   7 Input  32768 Bit        Muxes := 1     
+	   2 Input    181 Bit        Muxes := 4     
+	   2 Input     32 Bit        Muxes := 49    
+	   3 Input     32 Bit        Muxes := 3     
+	  11 Input     32 Bit        Muxes := 1     
+	  19 Input     32 Bit        Muxes := 2     
+	  15 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 12542 
+	   3 Input      8 Bit        Muxes := 1656  
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	  19 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 119   
+	   2 Input      2 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 2     
+	  19 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module dmem 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 4096  
++---Muxes : 
+	   7 Input  32768 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 12542 
+	   3 Input      8 Bit        Muxes := 1656  
+	   3 Input      2 Bit        Muxes := 119   
+	   7 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module MIO_BUS 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   3 Input     32 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+Module MULTI_CH32 
+Detailed RTL Component Info : 
++---Muxes : 
+	  11 Input     32 Bit        Muxes := 1     
+Module PC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module GRE_array__1 
+Detailed RTL Component Info : 
++---Registers : 
+	              181 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    181 Bit        Muxes := 1     
+Module RF 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 41    
+Module HazardDectectionUnit 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      5 Bit         XORs := 2     
+Module GRE_array__2 
+Detailed RTL Component Info : 
++---Registers : 
+	              181 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    181 Bit        Muxes := 1     
+Module ForwardingUnit__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      5 Bit         XORs := 2     
+Module ForwardingUnit 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      5 Bit         XORs := 2     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	  19 Input     32 Bit        Muxes := 2     
+	  15 Input     32 Bit        Muxes := 1     
+	  19 Input      4 Bit        Muxes := 1     
+	  19 Input      1 Bit        Muxes := 1     
+Module NPC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 1     
+Module GRE_array__3 
+Detailed RTL Component Info : 
++---Registers : 
+	              181 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    181 Bit        Muxes := 1     
+Module GRE_array 
+Detailed RTL Component Info : 
++---Registers : 
+	              181 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    181 Bit        Muxes := 1     
+Module SCPU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module SEG7x16 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+Module CLK_DIV 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3330] design dmem__GB5 has an empty top module
+WARNING: [Synth 8-3330] design dmem__GB6 has an empty top module
+WARNING: [Synth 8-3331] design ctrl has unconnected port GPRSel[1]
+WARNING: [Synth 8-3331] design ctrl has unconnected port GPRSel[0]
+WARNING: [Synth 8-3331] design ctrl has unconnected port Zero
+INFO: [Synth 8-3886] merging instance 'U_SCPU/ID_EX/out_reg[144]' (FDCE) to 'U_SCPU/ID_EX/out_reg[143]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U_7SEG/o_seg_r_reg[7] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:05:27 ; elapsed = 00:23:51 . Memory (MB): peak = 2000.758 ; gain = 1626.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |muxpart__8704_dmem |           1|    196609|
+|2     |dmem__GB1          |           1|     13196|
+|3     |dmem__GB2          |           1|     13443|
+|4     |dmem__GB3          |           1|     17990|
+|5     |dmem__GB4          |           1|     19062|
+|6     |dmem__GB5          |           1|         0|
+|7     |dmem__GB6          |           1|         0|
+|8     |dmem__GB7          |           1|      4196|
+|9     |muxpart__8705_dmem |           1|      4088|
+|10    |muxpart__8706_dmem |           1|      4088|
+|11    |muxpart__8707_dmem |           1|      4088|
+|12    |dmem__GB11         |           1|         0|
+|13    |IP2SOC_Top__GC0    |           1|      9967|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:35 ; elapsed = 00:24:13 . Memory (MB): peak = 2000.758 ; gain = 1626.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:06:12 ; elapsed = 00:27:09 . Memory (MB): peak = 2000.758 ; gain = 1626.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |muxpart__8704_dmem |           1|    135872|
+|2     |dmem__GB1          |           1|     12401|
+|3     |dmem__GB2          |           1|     12905|
+|4     |dmem__GB3          |           1|      9195|
+|5     |dmem__GB4          |           1|      9153|
+|6     |dmem__GB7          |           1|      1124|
+|7     |muxpart__8705_dmem |           1|      1016|
+|8     |muxpart__8706_dmem |           1|      1016|
+|9     |muxpart__8707_dmem |           1|      1016|
+|10    |IP2SOC_Top__GC0    |           1|      9967|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:06:45 ; elapsed = 00:28:40 . Memory (MB): peak = 2000.758 ; gain = 1626.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |muxpart__8704_dmem |           1|     32768|
+|2     |dmem__GB1          |           1|     11751|
+|3     |dmem__GB2          |           1|     12631|
+|4     |dmem__GB3          |           1|      6008|
+|5     |dmem__GB4          |           1|      6194|
+|6     |dmem__GB7          |           1|       529|
+|7     |muxpart__8705_dmem |           1|       472|
+|8     |muxpart__8706_dmem |           1|       472|
+|9     |muxpart__8707_dmem |           1|       472|
+|10    |IP2SOC_Top__GC0    |           1|      4490|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:06:50 ; elapsed = 00:29:02 . Memory (MB): peak = 2000.758 ; gain = 1626.707
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:06:50 ; elapsed = 00:29:02 . Memory (MB): peak = 2000.758 ; gain = 1626.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:06:51 ; elapsed = 00:29:04 . Memory (MB): peak = 2000.758 ; gain = 1626.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:06:51 ; elapsed = 00:29:04 . Memory (MB): peak = 2000.758 ; gain = 1626.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:06:51 ; elapsed = 00:29:05 . Memory (MB): peak = 2000.758 ; gain = 1626.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:06:51 ; elapsed = 00:29:05 . Memory (MB): peak = 2000.758 ; gain = 1626.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |imem          |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |imem   |     1|
+|2     |BUFG   |     5|
+|3     |CARRY4 |    58|
+|4     |LUT1   |    19|
+|5     |LUT2   |   375|
+|6     |LUT3   |   997|
+|7     |LUT4   |   648|
+|8     |LUT5   |  1913|
+|9     |LUT6   |  4347|
+|10    |MUXF7  |   804|
+|11    |MUXF8  |   384|
+|12    |FDCE   |   611|
+|13    |FDCE_1 |   697|
+|14    |FDC_1  |   295|
+|15    |FDPE   |    39|
+|16    |FDRE   |  1048|
+|17    |LD     |    96|
+|18    |LDC    |    32|
+|19    |IBUF   |    18|
+|20    |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------+------------+------+
+|      |Instance   |Module      |Cells |
++------+-----------+------------+------+
+|1     |top        |            | 12434|
+|2     |  U_7SEG   |SEG7x16     |    93|
+|3     |  U_CLKDIV |CLK_DIV     |    35|
+|4     |  U_SCPU   |SCPU        |  9251|
+|5     |    EX_MEM |GRE_array   |  5529|
+|6     |    ID_EX  |GRE_array_0 |   691|
+|7     |    IF_ID  |GRE_array_1 |   275|
+|8     |    MEM_WB |GRE_array_2 |   450|
+|9     |    U_EXT  |EXT         |     1|
+|10    |    U_NPC  |NPC         |    16|
+|11    |    U_PC   |PC          |    66|
+|12    |    U_RF   |RF          |  2056|
+|13    |    U_alu  |alu         |    63|
+|14    |  U_dmem   |dmem        |  2984|
++------+-----------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:06:51 ; elapsed = 00:29:05 . Memory (MB): peak = 2000.758 ; gain = 1626.707
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:06:20 ; elapsed = 00:28:19 . Memory (MB): peak = 2000.758 ; gain = 919.328
+Synthesis Optimization Complete : Time (s): cpu = 00:06:51 ; elapsed = 00:29:07 . Memory (MB): peak = 2000.758 ; gain = 1626.707
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2366 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2000.758 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1120 instances were transformed.
+  FDCE_1 => FDCE (inverted pins: C): 697 instances
+  FDC_1 => FDCE (inverted pins: C): 295 instances
+  LD => LDCE: 96 instances
+  LDC => LDCE: 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+57 Infos, 140 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:06:53 ; elapsed = 00:29:14 . Memory (MB): peak = 2000.758 ; gain = 1638.203
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2000.758 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Vivadowork/PIPELINE_4_APPLICATION/PIPELINE_4_APPLICATION.runs/synth_1/IP2SOC_Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file IP2SOC_Top_utilization_synth.rpt -pb IP2SOC_Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May  8 15:48:42 2024...

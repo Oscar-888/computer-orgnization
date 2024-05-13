@@ -1,0 +1,20 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/Vivadowork/PIPELINE_3_SIMULATION/PIPELINE_3_SIMULATION.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/Vivadowork/PIPELINE_3_SIMULATION/resources/EXT.v,1713526659,verilog,,D:/Vivadowork/PIPELINE_3_SIMULATION/resources/GRE_array.v,D:/Vivadowork/PIPELINE_3_SIMULATION/resources/ctrl_encode_def.v,EXT,,,,,,,,
+D:/Vivadowork/PIPELINE_3_SIMULATION/resources/GRE_array.v,1713526725,verilog,,D:/Vivadowork/PIPELINE_3_SIMULATION/resources/HazardDectection.v,,GRE_array,,,,,,,,
+D:/Vivadowork/PIPELINE_3_SIMULATION/resources/HazardDectection.v,1713526761,verilog,,D:/Vivadowork/PIPELINE_3_SIMULATION/resources/NPC.v,,HazardDectectionUnit,,,,,,,,
+D:/Vivadowork/PIPELINE_3_SIMULATION/resources/NPC.v,1714204820,verilog,,D:/Vivadowork/PIPELINE_3_SIMULATION/resources/PC.v,D:/Vivadowork/PIPELINE_3_SIMULATION/resources/ctrl_encode_def.v,NPC,,,,,,,,
+D:/Vivadowork/PIPELINE_3_SIMULATION/resources/PC.v,1713511746,verilog,,D:/Vivadowork/PIPELINE_3_SIMULATION/resources/RF.v,,PC,,,,,,,,
+D:/Vivadowork/PIPELINE_3_SIMULATION/resources/RF.v,1713181549,verilog,,D:/Vivadowork/PIPELINE_3_SIMULATION/resources/SCPU.v,,RF,,,,,,,,
+D:/Vivadowork/PIPELINE_3_SIMULATION/resources/SCPU.v,1715146095,verilog,,D:/Vivadowork/PIPELINE_3_SIMULATION/resources/alu.v,D:/Vivadowork/PIPELINE_3_SIMULATION/resources/ctrl_encode_def.v,SCPU,,,,,,,,
+D:/Vivadowork/PIPELINE_3_SIMULATION/resources/alu.v,1713526709,verilog,,D:/Vivadowork/PIPELINE_3_SIMULATION/resources/ctrl.v,D:/Vivadowork/PIPELINE_3_SIMULATION/resources/ctrl_encode_def.v,alu,,,,,,,,
+D:/Vivadowork/PIPELINE_3_SIMULATION/resources/ctrl.v,1715138328,verilog,,D:/Vivadowork/PIPELINE_3_SIMULATION/resources/dm.v,,ctrl,,,,,,,,
+D:/Vivadowork/PIPELINE_3_SIMULATION/resources/ctrl_encode_def.v,1621678578,verilog,,,,,,,,,,,,
+D:/Vivadowork/PIPELINE_3_SIMULATION/resources/dm.v,1713526813,verilog,,D:/Vivadowork/PIPELINE_3_SIMULATION/resources/forward.v,D:/Vivadowork/PIPELINE_3_SIMULATION/resources/ctrl_encode_def.v,dm,,,,,,,,
+D:/Vivadowork/PIPELINE_3_SIMULATION/resources/forward.v,1713526643,verilog,,D:/Vivadowork/PIPELINE_3_SIMULATION/resources/im.v,,ForwardingUnit,,,,,,,,
+D:/Vivadowork/PIPELINE_3_SIMULATION/resources/im.v,1650968517,verilog,,D:/Vivadowork/PIPELINE_3_SIMULATION/resources/sccomp.v,,im,,,,,,,,
+D:/Vivadowork/PIPELINE_3_SIMULATION/resources/sccomp.v,1713967749,verilog,,D:/Vivadowork/PIPELINE_3_SIMULATION/resources/sccomp_tb.v,,sccomp,,,,,,,,
+D:/Vivadowork/PIPELINE_3_SIMULATION/resources/sccomp_tb.v,1713966301,verilog,,,,sccomp_tb,,,,,,,,
