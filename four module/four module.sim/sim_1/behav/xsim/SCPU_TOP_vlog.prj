@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../.srcs/sources_1/dist_mem_gen_0_1/sim/dist_mem_gen_0.v" \
+"../../../../four module.srcs/sources_1/new/EXT.v" \
+"../../../../four module.srcs/sources_1/new/alu.v" \
+"../../../../four module.srcs/sources_1/new/ctrl.v" \
+"../../../../four module.srcs/sources_1/new/dm.v" \
+"../../../../four module.srcs/sources_1/new/rf.v" \
+"../../../../four module.srcs/sources_1/new/seg7x16.v" \
+"../../../../four module.srcs/sources_1/new/SCPU_TOP.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,13 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/Vivadowork/.srcs/sources_1/dist_mem_gen_0_1/sim/dist_mem_gen_0.v,1703655007,verilog,,D:/Vivadowork/four module/four module.srcs/sources_1/new/EXT.v,,dist_mem_gen_0,,,,,,,,
+D:/Vivadowork/four module/four module.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/Vivadowork/four module/four module.srcs/sources_1/new/EXT.v,1701786235,verilog,,D:/Vivadowork/four module/four module.srcs/sources_1/new/alu.v,,EXT,,,,,,,,
+D:/Vivadowork/four module/four module.srcs/sources_1/new/SCPU_TOP.v,1701790949,verilog,,,,SCPU_TOP,,,,,,,,
+D:/Vivadowork/four module/four module.srcs/sources_1/new/alu.v,1701606475,verilog,,D:/Vivadowork/four module/four module.srcs/sources_1/new/ctrl.v,,alu,,,,,,,,
+D:/Vivadowork/four module/four module.srcs/sources_1/new/ctrl.v,1701929347,verilog,,D:/Vivadowork/four module/four module.srcs/sources_1/new/dm.v,,ctrl,,,,,,,,
+D:/Vivadowork/four module/four module.srcs/sources_1/new/dm.v,1701786288,verilog,,D:/Vivadowork/four module/four module.srcs/sources_1/new/rf.v,,dm,,,,,,,,
+D:/Vivadowork/four module/four module.srcs/sources_1/new/rf.v,1701606541,verilog,,D:/Vivadowork/four module/four module.srcs/sources_1/new/seg7x16.v,,rf,,,,,,,,
+D:/Vivadowork/four module/four module.srcs/sources_1/new/seg7x16.v,1701606539,verilog,,D:/Vivadowork/four module/four module.srcs/sources_1/new/SCPU_TOP.v,,seg7x16,,,,,,,,
